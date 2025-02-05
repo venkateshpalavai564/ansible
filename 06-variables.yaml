@@ -1,0 +1,9 @@
+- name: variables example
+  hosts: local
+  connection: local
+  vars:
+    course = "Devops"
+    Duration = 120hrs
+  tasks:
+  ansible.builtin.debug:
+    msg: "course {{course}} and duration {{Duration}}"
