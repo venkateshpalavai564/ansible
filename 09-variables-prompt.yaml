@@ -6,6 +6,7 @@
     prompt: "please enter course name"
   - name: duration
     prompt: "please enter duration"
+    private: false
   tasks:
   - name:
     ansible.builtin.debug:
