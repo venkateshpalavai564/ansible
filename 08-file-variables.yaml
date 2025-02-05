@@ -1,0 +1,10 @@
+- name: variables example
+  hosts: local
+  connection: local
+  vars_files:
+    variables.yaml
+  tasks:
+  - name: variables
+    ansible.builtin.debug:
+      msg: "course {{course}} and duration {{Duration}}"
+  
