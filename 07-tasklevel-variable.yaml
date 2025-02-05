@@ -8,4 +8,9 @@
   - name: variables
     ansible.builtin.debug:
       msg: "course {{course}} and duration {{Duration}}"
-  
+  - name: variables2
+    vars:
+      course : "AWS"
+      Duration : 20hrs 
+    ansible.builtin.debug:
+      msg: "course {{course}} and duration {{Duration}}"
