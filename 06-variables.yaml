@@ -5,6 +5,6 @@
     course : "Devops"
     Duration : 120hrs
   tasks:
-    name: variables
+  - name: variables
     ansible.builtin.debug:
       msg: "course {{course}} and duration {{Duration}}"
