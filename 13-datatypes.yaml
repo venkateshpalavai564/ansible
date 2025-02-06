@@ -1,0 +1,19 @@
+- name: all datatypes in variables.yaml
+  hosts: local
+  connection: local
+  vars:
+    course: "AWS"
+    duration: 120
+    topics:
+    - AWS
+    - Devops
+    - Shell
+    live: true
+    tools:
+      ci: jenkins
+      cloud: AWS
+      script: python
+  tasks:
+  - name: rinting all datatype values
+    ansible.builtin.debug:
+      msg: "{{course}} {{duration}}{{topics}}{{live}}{{tools}}"
