@@ -11,5 +11,5 @@
     vars:
       naam: "one, two, three"
     ansible.builtin.debug:
-      msg: "{{naam | split(',')}}"
+      msg: "{{naam | split(',') | upper}}"
   
