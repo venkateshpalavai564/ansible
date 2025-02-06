@@ -10,7 +10,7 @@
       - Pavan
   - name:
     ansible.builtin.debug:
-      msg: "{{item.name}}"
+      msg: "{{item.intial}}.{{item.name}}"
     loop:
-      - name: venkatesh
-      - name: pavan
+      - {name: 'venkatesh' intial: 'palavai'}
+      - {name: pavan intial: 'konidala'}
