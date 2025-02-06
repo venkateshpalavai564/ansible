@@ -3,7 +3,7 @@
   tasks:
   - name:
     ansible.builtin.command: ls -ltr
-    register: command_result
+    register: c_result
   - name:
     ansible.builtin.debug:
-      msg: "{{command_result}}"
+      msg: "{{c_result}}"
