@@ -7,3 +7,9 @@
       num: [1,2,4,6,8,9]
     ansible.builtin.debug:
       msg: "min number is {{num | min}}, max number is {{num | max}}"
+  - name: converting string to list
+    vars:
+      naam: "one, two, three"
+    ansible.builtin.debug:
+      msg: "{{naam | split(',')}}"
+  
