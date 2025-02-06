@@ -8,3 +8,9 @@
     loop:
       - venkatesh
       - Pavan
+  - name:
+    ansible.builtin.debug:
+      msg: "{{item.name}}"
+    loop:
+      - name: venkatesh
+      - name: pavan
