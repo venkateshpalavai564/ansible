@@ -1,0 +1,5 @@
+- name: shell module example
+  hosts: node
+  tasks:
+  - name:
+    ansible.builtin.shell: ls -ltr >/tmp/op.txt 
