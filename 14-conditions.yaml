@@ -1,0 +1,10 @@
+- name: conditions in variables.yaml
+  hosts: local
+  connection: local
+  vars:
+    days: 12
+  tasks: 
+  - name: checking the conditions
+    ansible.builtin.debug:
+      msg: "no of days are greater than 15"
+    when: days > 10  
