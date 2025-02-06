@@ -12,4 +12,9 @@
       naam: "one, two, three"
     ansible.builtin.debug:
       msg: "{{naam | split(',') | upper}}"
+  - name: check the given is valid ip or not
+    vars:
+      ip: 128.255.255.255
+    ansible.builtin.debug:
+      msg: "{{ip | ansible.utils.ipaddr }}"
   
