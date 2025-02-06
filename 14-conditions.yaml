@@ -7,4 +7,4 @@
   - name: checking the conditions
     ansible.builtin.debug:
       msg: "no of days are greater than 15"
-    when: days > 10  
+    when: days < 10  
