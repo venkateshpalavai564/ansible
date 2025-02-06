@@ -4,6 +4,6 @@
   tasks:
   - name: min max from a list of numbers
     vars:
-      num=[1,2,4,6,8,9]
+      num: [1,2,4,6,8,9]
     ansible.builtin.debug:
       msg: "min number is {{num | min}}, max number is {{num | max}}"
