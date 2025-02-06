@@ -12,5 +12,5 @@
     ansible.builtin.debug:
       msg: "{{item.intial}}.{{item.name}}"
     loop:
-      - {name: 'venkatesh' intial: 'palavai'}
-      - {name: pavan intial: 'konidala'}
+      - { name: 'venkatesh' intial: 'palavai' }
+      - { name: pavan intial: 'konidala' }
