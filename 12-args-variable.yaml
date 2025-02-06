@@ -1,0 +1,7 @@
+- name: variable test from command line
+  hosts: local
+  connection: local
+  tasks:
+  - name: args
+    ansible.builtin.debug:
+      msg: "entered value {{cousre}}"
