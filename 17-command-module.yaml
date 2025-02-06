@@ -1,0 +1,9 @@
+- name: command module example
+  hosts: node
+  tasks:
+  - name:
+    ansible.builtin.command: ls -ltr
+    register: command_result
+  - name:
+    ansible.builtin.debug:
+      msg: "{{command_result}}"
