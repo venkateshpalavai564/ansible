@@ -2,4 +2,4 @@
   hosts: node
   tasks:
   - name:
-    ansible.builtin.shell: ll >/tmp/op.txt 
+    ansible.builtin.shell: ls -a  >/tmp/op.txt 
